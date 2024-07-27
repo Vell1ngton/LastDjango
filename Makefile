@@ -26,3 +26,7 @@ shell:
 .PHONY: lint
 lint:
 	@poetry run flake8 python_django_orm_blog
+
+.PHONY: migrations
+migrations:
+	@$(MANAGE) makemigrations
